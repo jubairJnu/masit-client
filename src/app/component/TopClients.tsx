@@ -12,6 +12,9 @@ const TopClients = () => {
           {" "}
           Top Client
         </h1>
+        <p className="text-center text-neutral-600 mt-3 font-semibold">
+          Clients keep their belief on us
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center mt-16">
           {Clients?.map((client) => (

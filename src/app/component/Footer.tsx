@@ -6,7 +6,7 @@ import { div } from "framer-motion/client";
 const Footer = () => {
   return (
     <div className="mt-28 ">
-      <div className="w-full bg-neutral-100 bg-opacity-35 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center p-10">
+      <div className="w-full bg-neutral-100 bg-opacity-35 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:justify-items-center p-10">
         <div className="w-60">
           {/* logo */}
           <div className="flex items-center gap-3  ">

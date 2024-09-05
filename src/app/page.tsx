@@ -1,3 +1,4 @@
+import Achievement from "./component/Achievement";
 import Banner from "./component/Banner";
 import TopClients from "./component/TopClients";
 import WhyChooseUs from "./component/WhyChooseUs";
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Banner />
       <TopClients />
       <WhyChooseUs />
+      <Achievement />
     </div>
   );
 };

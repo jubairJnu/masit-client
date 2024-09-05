@@ -123,7 +123,7 @@ export const Header = () => {
         </NavbarContent>
 
         <NavbarMenuToggle
-          className="sm:hidden text-3xl p-2 text-white"
+          className="sm:hidden text-3xl p-2 text-green-800"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
       </div>

@@ -13,7 +13,7 @@ const WhyChooseUs = () => {
         We provide quality software with lifetime support
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-4 mt-20 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-10 md:gap-4 mt-20 ">
         {/*  div 1 */}
         <div className="relative  border border-gray-300 rounded-br-3xl w-60 h-32">
           <div className="bg-green-200 text-green-700 text-3xl py-1 px-3 w-14 text-center flex justify-center absolute -top-5 left-3 rounded">
