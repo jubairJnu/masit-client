@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./lib/Provider";
 import Link from "next/link";
 import { Header } from "./component/Header";
+import Footer from "./component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Link rel="icon" href="/favicon.ico" />
         <Header />
         <Providers>{children}</Providers>
+        <Footer />
       </body>
     </html>
   );

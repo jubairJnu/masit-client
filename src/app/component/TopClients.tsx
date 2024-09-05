@@ -6,14 +6,14 @@ import user from "@/asset/user.png";
 
 const TopClients = () => {
   return (
-    <div className="w-full  text-neutral-700 my-10">
+    <div className="w-full  text-neutral-700 mt-20 ">
       <div className="w-full max-w-7xl mx-auto px-3 ">
         <h1 className=" text-2xl  md:text-3xl font-bold text-center">
           {" "}
           Top Client
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center mt-16">
           {Clients?.map((client) => (
             <div
               className="h-64 w-60 border border-neutral-200 hover:bg-gradient-to-tr from-[#3cb665] to-[#71ad02] hover:text-slate-200 rounded-lg  px-1 "

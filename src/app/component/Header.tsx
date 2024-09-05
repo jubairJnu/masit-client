@@ -45,11 +45,7 @@ export const Header = () => {
 
   return (
     <Navbar
-      className={`w-full border-none transition-colors duration-300 ${
-        isAtTop
-          ? "bg-gradient-to-l from-[#067421] to-[#000000] "
-          : "lg:bg-transparent"
-      }`}
+      className="w-full border-none bg-green-100 bg-opacity-50 "
       maxWidth="full" // Ensure Navbar spans full width
       isBordered
       isMenuOpen={isMenuOpen}
@@ -60,7 +56,7 @@ export const Header = () => {
         <NavbarBrand>
           <Link href="/.">
             {/* <Image src={logo} width={50} height={50} alt="MAST IT" /> */}
-            <p className="font-bold text-center  text-xl ms-2  text-white">
+            <p className="font-bold text-center  text-xl ms-2  text-green-900">
               MAS IT
               <br />
               <span className="text-sm text-red-500">SOLUTIONS</span>
@@ -70,7 +66,7 @@ export const Header = () => {
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/about"
             >
               About
@@ -78,7 +74,7 @@ export const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/career"
             >
               Career
@@ -86,7 +82,7 @@ export const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/technologies"
             >
               Technologies
@@ -94,7 +90,7 @@ export const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="clients"
             >
               Clients
@@ -102,7 +98,7 @@ export const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/blog"
             >
               Blog
@@ -110,7 +106,7 @@ export const Header = () => {
           </NavbarItem>
           <NavbarItem>
             <Link
-              className="text-[#eaebec] transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/contact"
             >
               Contact
