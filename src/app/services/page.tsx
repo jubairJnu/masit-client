@@ -101,7 +101,7 @@ const ServicesPage = () => {
 
         {/* 10 */}
 
-        <div className="w-[342px] h-[224px] hover:-translate-y-2 trasnition delay-150 ease-in-out rounded-lg bg-white flex flex-col justify-center items-center p-5 transition-all duration-400 hover:bg-[#fdf5f3]">
+        <div className="w-[342px] h-[224px] hover:-translate-y-2 trasnition delay-150 ease-in-out rounded-lg bg-white flex flex-col justify-center items-center p-5 n duration-400 hover:bg-[#fdf5f3]">
           <Image width={60} height={60} src={hostingimg} alt="host" />
           <p className="mt-5 text-2xl text-center text-sky-600 font-semibold">
             Hosting Registration

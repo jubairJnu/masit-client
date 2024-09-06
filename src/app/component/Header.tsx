@@ -29,6 +29,16 @@ export const Header = () => {
     "Career",
   ];
 
+  const menuLinks = [
+    "/services",
+    "/technologies",
+    "/clients",
+    "/blogs",
+    "/contact",
+    "/about",
+    "/career",
+  ];
+
   useEffect(() => {
     // Handler to call on scroll
     const handleScroll = () => {
@@ -93,7 +103,7 @@ export const Header = () => {
           <NavbarItem>
             <Link
               className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/blog"
+              href="/blogs"
             >
               Blog
             </Link>
@@ -141,18 +151,7 @@ export const Header = () => {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full "
-              color={
-                index === 2
-                  ? "warning"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              href="#"
-              size="lg"
-            >
+            <Link className="w-full" href={menuLinks[index]} size="lg">
               {item}
             </Link>
           </NavbarMenuItem>
