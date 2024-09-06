@@ -25,13 +25,15 @@ const Achievement = () => {
           <div className="w-[360px] text-center rounded-lg border border-green-600 p-5 hover:bg-green-100/30 hover:-translate-y-1 hover:shadow-lg transition delay-100 ease-in-out duration-300 ">
             <div className="flex items-center justify-center  gap-2">
               <CountUp
-                className="mt-1  text-5xl font-bold text-green-700"
+                className="mt-1  text-3xl md:text-5xl font-bold text-green-700"
                 end={150}
                 duration={5}
               />
-              <p className=" text-5xl font-bold text-green-700">+</p>
+              <p className=" text-3xl md:text-5xl font-bold text-green-700">
+                +
+              </p>
             </div>
-            <p className="text-[32px] font-semibold text-neutral-700 mt-6">
+            <p className="text-xl md:text-[32px] font-semibold text-neutral-700 mt-6">
               Satisfied Client
             </p>
           </div>
@@ -43,13 +45,15 @@ const Achievement = () => {
           <div className="w-[360px] text-center  rounded-lg border border-green-600 p-5 hover:bg-green-100/30 hover:-translate-y-1 hover:shadow-lg transition delay-100 ease-in-out duration-300 ">
             <div className="flex items-center justify-center  gap-2">
               <CountUp
-                className="mt-1  text-5xl font-bold text-green-700"
+                className="mt-1  text-3xl md:text-5xl font-bold text-green-700"
                 end={225}
                 duration={5}
               />
-              <p className=" text-5xl font-bold text-green-700">+</p>
+              <p className=" text-3xl md:text-5xl font-bold text-green-700">
+                +
+              </p>
             </div>
-            <p className="text-[32px] font-semibold text-neutral-700 mt-6">
+            <p className="text-xl md:text-[32px] font-semibold text-neutral-700 mt-6">
               Completed Project
             </p>
           </div>
@@ -61,13 +65,15 @@ const Achievement = () => {
           <div className="w-[360px] text-center rounded-lg border border-green-600 p-5 hover:bg-green-100/30 hover:-translate-y-1 hover:shadow-lg transition delay-100 ease-in-out duration-300 ">
             <div className="flex items-center justify-center  gap-2">
               <CountUp
-                className="mt-1  text-5xl font-bold text-green-700"
+                className="mt-1  text-3xl md:text-5xl font-bold text-green-700"
                 end={10}
                 duration={5}
               />
-              <p className=" text-5xl font-bold text-green-700">+</p>
+              <p className=" text-3xl md:text-5xl font-bold text-green-700">
+                +
+              </p>
             </div>
-            <p className="text-[32px] font-semibold text-neutral-700 mt-6">
+            <p className="text-xl md:text-[32px] font-semibold text-neutral-700 mt-6">
               Team Member
             </p>
           </div>
