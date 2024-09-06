@@ -20,12 +20,13 @@ export const Header = () => {
   const [isAtTop, setIsAtTop] = useState(true);
 
   const menuItems = [
-    "About",
-    "Career",
+    "Services",
     "Technologies",
     "Clients",
     "Blog",
     "Contact",
+    "About",
+    "Career",
   ];
 
   useEffect(() => {
@@ -67,19 +68,12 @@ export const Header = () => {
           <NavbarItem>
             <Link
               className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/about"
+              href="/services"
             >
-              About
+              Services
             </Link>
           </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/career"
-            >
-              Career
-            </Link>
-          </NavbarItem>
+
           <NavbarItem>
             <Link
               className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
@@ -107,9 +101,25 @@ export const Header = () => {
           <NavbarItem>
             <Link
               className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              href="/career"
+            >
+              Career
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
               href="/contact"
             >
               Contact
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link
+              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
+              href="/about"
+            >
+              About
             </Link>
           </NavbarItem>
         </NavbarContent>

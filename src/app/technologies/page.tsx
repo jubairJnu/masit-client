@@ -18,7 +18,7 @@ const TechnologyPage = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-16 justify-items-center mt-16">
         {/* 1 */}
-        <div className="w-40 rounded-md hover:-translate-y-2 shadow-lg transition delay-150 duration-200 group">
+        <div className="w-40 rounded-md hover:-translate-y-2 shadow-lg transition delay-150 duration-400 ease-in-out group">
           <Image src={netimg} alt="net" />
 
           <p className="py-2 rounded-md px-3 w-full text-center border group-hover:bg-green-700 group-hover:text-white transition-colors delay-150 duration-300 text-neutral-600 font-bold text-lg ">
