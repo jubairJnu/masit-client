@@ -27,7 +27,7 @@ const Banner = () => {
       animate="visible"
       className="flex items-center space-x-1 bg-cover bg-center p-5 text-white bg-gradient-to-l from-[#0c0c0c] to-[#03420d] h-60"
     >
-      <p className="text-slate-300  w-full max-w-[760px] text-center font-bold mx-auto text-4xl leading-loose items-center">
+      <p className="text-slate-300  w-full max-w-[760px] text-center font-bold mx-auto text-4xl md:leading-loose items-center">
         Ensure quality with new features of your
         {letters.map((letter, index) => (
           <motion.span
