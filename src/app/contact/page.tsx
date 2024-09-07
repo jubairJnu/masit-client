@@ -1,13 +1,13 @@
 import Image from "next/image";
-import contactImg from "@/asset/contact-us-01.svg";
+import contactImg from "@/asset/contact-us-01-01.svg";
 
 const ContactPage = () => {
   return (
-    <div className="w-full max-w-7xl mx-auto px-2 min-h-screen mt-10 grid grid-cols-1 md:grid-cols-2">
+    <div className="w-full max-w-7xl mx-auto px-2 mt-20 grid grid-cols-1 md:grid-cols-2">
       <div>
         <Image src={contactImg} alt="contact us" />
       </div>
-      <div className="mt-20 ml-auto">
+      <div className=" ml-auto">
         <h1 className="mt-5 text-2xl font-bold text-blue-700">
           Feel Free To Contact Us.
         </h1>

@@ -1,16 +1,16 @@
 import Image from "next/image";
-import logo from "@/asset/masit logo-01.png";
+import logo from "@/asset/mas-logo.jpg"
 import { IoLocationOutline } from "react-icons/io5";
 import { div } from "framer-motion/client";
 
 const Footer = () => {
   return (
-    <div className="mt-28 ">
+    <div className="mt-10 ">
       <div className="w-full bg-neutral-100 bg-opacity-35 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:justify-items-center p-10">
         <div className="w-60">
           {/* logo */}
           <div className="flex items-center gap-3  ">
-            <Image width={60} height={60} src={logo} alt="logo" />
+            {/* <Image width={20} height={60} src={logo} alt="logo" /> */}
 
             <p className="text-xl text-center font-bold ">MAS IT Solutions</p>
           </div>

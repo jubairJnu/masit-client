@@ -13,7 +13,7 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 
-import logo from "@/asset/masit logo-01.png";
+import logo from "@/asset/mas-logo.jpg";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,12 +66,7 @@ export const Header = () => {
       <div className="mx-auto w-full max-w-7xl flex items-center justify-between">
         <NavbarBrand>
           <Link href="/.">
-            {/* <Image src={logo} width={50} height={50} alt="MAST IT" /> */}
-            <p className="font-bold text-center  text-xl ms-2  text-green-900">
-              MAS IT
-              <br />
-              <span className="text-sm text-red-500">SOLUTIONS</span>
-            </p>
+            <Image src={logo} width={100} height={100} alt="MAST IT" />
           </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -133,14 +128,8 @@ export const Header = () => {
             </Link>
           </NavbarItem>
         </NavbarContent>
-
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
-            <div className="bg-[#ad0505] text-white px-4 py-2 rounded text-[14px]">
-              Get Started
-            </div>
-          </NavbarItem>
-        </NavbarContent>
+{/* 
+        <NavbarContent justify="end"></NavbarContent> */}
 
         <NavbarMenuToggle
           className="sm:hidden text-3xl p-2 text-green-800"
