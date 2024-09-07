@@ -12,32 +12,25 @@ import {
   Link,
 } from "@nextui-org/react";
 import Image from "next/image";
-
 import logo from "@/asset/mas-logo.jpg";
+import { usePathname } from "next/navigation";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
 
   const menuItems = [
-    "Services",
-    "Technologies",
-    "Clients",
-    "Blog",
-    "Contact",
-    "About",
-    "Career",
+    { name: "Services", link: "/services" },
+    { name: "Technologies", link: "/technologies" },
+    { name: "Clients", link: "/clients" },
+    { name: "Blog", link: "/blogs" },
+    { name: "Contact", link: "/contact" },
+    { name: "About", link: "/about" },
+    { name: "Career", link: "/career" },
   ];
 
-  const menuLinks = [
-    "/services",
-    "/technologies",
-    "/clients",
-    "/blogs",
-    "/contact",
-    "/about",
-    "/career",
-  ];
+  const pathname = usePathname();
+  console.log("path", pathname);
 
   useEffect(() => {
     // Handler to call on scroll
@@ -56,80 +49,32 @@ export const Header = () => {
 
   return (
     <Navbar
-      className="w-full border-none bg-green-100 bg-opacity-50 "
+      className="w-full border-none bg-green-100 bg-opacity-50"
       maxWidth="full" // Ensure Navbar spans full width
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
     >
-      {/* Container to constrain max width */}
       <div className="mx-auto w-full max-w-7xl flex items-center justify-between">
         <NavbarBrand>
-          <Link href="/.">
-            <Image src={logo} width={100} height={100} alt="MAST IT" />
+          <Link href="/">
+            <Image src={logo} width={140} height={100} alt="MAST IT" />
           </Link>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/services"
-            >
-              Services
-            </Link>
-          </NavbarItem>
-
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/technologies"
-            >
-              Technologies
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="clients"
-            >
-              Clients
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/blogs"
-            >
-              Blog
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/career"
-            >
-              Career
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/contact"
-            >
-              Contact
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link
-              className="text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110"
-              href="/about"
-            >
-              About
-            </Link>
-          </NavbarItem>
+          {menuItems.map((item) => (
+            <NavbarItem key={item.link}>
+              <Link
+                href={item.link}
+                className={`text-black transition delay-150 duration-300 ease-in-out hover:text-red-500 font-bold hover:scale-110 ${
+                  pathname === item.link ? "text-red-500" : ""
+                }`}
+              >
+                {item.name}
+              </Link>
+            </NavbarItem>
+          ))}
         </NavbarContent>
-{/* 
-        <NavbarContent justify="end"></NavbarContent> */}
 
         <NavbarMenuToggle
           className="sm:hidden text-3xl p-2 text-green-800"
@@ -138,10 +83,16 @@ export const Header = () => {
       </div>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href={menuLinks[index]} size="lg">
-              {item}
+        {menuItems.map((item) => (
+          <NavbarMenuItem key={item.link}>
+            <Link
+              href={item.link}
+              className={`w-full ${
+                pathname === item.link ? "text-red-500" : "text-black"
+              }`}
+              size="lg"
+            >
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
